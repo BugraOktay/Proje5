@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation1"
+    app:startDestination="@id/fragment_1">
+    <fragment
+        android:id="@+id/fragment_1"
+        android:name="com.example.yazlab5.Fragment_1"
+        android:label="Fragment_1" >
+        <action
+            android:id="@+id/action_fragment_1_to_fragment_2"
+            app:destination="@id/fragment_2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_2"
+        android:name="com.example.yazlab5.Fragment_2"
+        android:label="fragment_2"
+        tools:layout="@layout/fragment_2" >
+        <action
+            android:id="@+id/action_fragment_2_to_fragment_1"
+            app:destination="@id/fragment_1" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="hata" />
+        <action
+            android:id="@+id/action_fragment_2_to_oda1"
+            app:destination="@id/oda1" />
+        <action
+            android:id="@+id/action_fragment_2_to_oda2"
+            app:destination="@id/oda2" />
+        <action
+            android:id="@+id/action_fragment_2_to_oda3"
+            app:destination="@id/oda3" />
+        <action
+            android:id="@+id/action_fragment_2_to_oda4"
+            app:destination="@id/oda4" />
+        <action
+            android:id="@+id/action_fragment_2_to_oda5"
+            app:destination="@id/oda5" />
+        <action
+            android:id="@+id/action_fragment_2_to_oda6"
+            app:destination="@id/oda6" />
+        <action
+            android:id="@+id/action_fragment_2_to_oda7"
+            app:destination="@id/oda7" />
+        <action
+            android:id="@+id/action_fragment_2_to_oda8"
+            app:destination="@id/oda8" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="hata2" />
+    </fragment>
+    <fragment
+        android:id="@+id/oda1"
+        android:name="com.example.yazlab5.Oda1"
+        android:label="fragment_oda1"
+        tools:layout="@layout/fragment_oda1" >
+        <action
+            android:id="@+id/action_oda1_to_fragment_2"
+            app:destination="@id/fragment_2" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <action
+            android:id="@+id/action_oda1_to_game1"
+            app:destination="@id/game1" />
+    </fragment>
+    <fragment
+        android:id="@+id/oda2"
+        android:name="com.example.yazlab5.Oda2"
+        android:label="fragment_oda2"
+        tools:layout="@layout/fragment_oda2" >
+        <action
+            android:id="@+id/action_oda2_to_fragment_2"
+            app:destination="@id/fragment_2" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <action
+            android:id="@+id/action_oda2_to_game2"
+            app:destination="@id/game2" />
+    </fragment>
+    <fragment
+        android:id="@+id/oda3"
+        android:name="com.example.yazlab5.Oda3"
+        android:label="fragment_oda3"
+        tools:layout="@layout/fragment_oda3" >
+        <action
+            android:id="@+id/action_oda3_to_fragment_2"
+            app:destination="@id/fragment_2" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <action
+            android:id="@+id/action_oda3_to_game3"
+            app:destination="@id/game3" />
+    </fragment>
+    <fragment
+        android:id="@+id/oda4"
+        android:name="com.example.yazlab5.Oda4"
+        android:label="fragment_oda4"
+        tools:layout="@layout/fragment_oda4" >
+        <action
+            android:id="@+id/action_oda4_to_fragment_2"
+            app:destination="@id/fragment_2" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <action
+            android:id="@+id/action_oda4_to_game4"
+            app:destination="@id/game4" />
+    </fragment>
+    <fragment
+        android:id="@+id/oda5"
+        android:name="com.example.yazlab5.Oda5"
+        android:label="fragment_oda5"
+        tools:layout="@layout/fragment_oda5" >
+        <action
+            android:id="@+id/action_oda5_to_fragment_2"
+            app:destination="@id/fragment_2" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <action
+            android:id="@+id/action_oda5_to_game5"
+            app:destination="@id/game5" />
+    </fragment>
+    <fragment
+        android:id="@+id/oda6"
+        android:name="com.example.yazlab5.Oda6"
+        android:label="fragment_oda6"
+        tools:layout="@layout/fragment_oda6" >
+        <action
+            android:id="@+id/action_oda6_to_fragment_2"
+            app:destination="@id/fragment_2" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <action
+            android:id="@+id/action_oda6_to_game6"
+            app:destination="@id/game6" />
+    </fragment>
+    <fragment
+        android:id="@+id/oda7"
+        android:name="com.example.yazlab5.Oda7"
+        android:label="fragment_oda7"
+        tools:layout="@layout/fragment_oda7" >
+        <action
+            android:id="@+id/action_oda7_to_fragment_2"
+            app:destination="@id/fragment_2" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <action
+            android:id="@+id/action_oda7_to_game7"
+            app:destination="@id/game7" />
+    </fragment>
+    <fragment
+        android:id="@+id/oda8"
+        android:name="com.example.yazlab5.Oda8"
+        android:label="fragment_oda8"
+        tools:layout="@layout/fragment_oda8" >
+        <action
+            android:id="@+id/action_oda8_to_fragment_2"
+            app:destination="@id/fragment_2" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <action
+            android:id="@+id/action_oda8_to_game8"
+            app:destination="@id/game8" />
+    </fragment>
+    <fragment
+        android:id="@+id/game1"
+        android:name="com.example.yazlab5.Game1"
+        android:label="fragment_game1"
+        tools:layout="@layout/fragment_game1" >
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <action
+            android:id="@+id/action_game1_to_oda1"
+            app:destination="@id/oda1" />
+        <argument
+            android:name="Rakip_id"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <action
+            android:id="@+id/action_game1_to_game1"
+            app:destination="@id/game1" />
+    </fragment>
+    <fragment
+        android:id="@+id/game2"
+        android:name="com.example.yazlab5.Game2"
+        android:label="fragment_game2"
+        tools:layout="@layout/fragment_game2" >
+        <action
+            android:id="@+id/action_game2_to_oda2"
+            app:destination="@id/oda2" />
+        <action
+            android:id="@+id/action_game2_self"
+            app:destination="@id/game2" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <argument
+            android:name="Rakip_id"
+            app:argType="string"
+            android:defaultValue="-1" />
+    </fragment>
+    <fragment
+        android:id="@+id/game3"
+        android:name="com.example.yazlab5.Game3"
+        android:label="fragment_game3"
+        tools:layout="@layout/fragment_game3" >
+        <action
+            android:id="@+id/action_game3_to_oda3"
+            app:destination="@id/oda3" />
+        <action
+            android:id="@+id/action_game3_self"
+            app:destination="@id/game3" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <argument
+            android:name="Rakip_id"
+            app:argType="string"
+            android:defaultValue="-1" />
+    </fragment>
+    <fragment
+        android:id="@+id/game4"
+        android:name="com.example.yazlab5.Game4"
+        android:label="fragment_game4"
+        tools:layout="@layout/fragment_game4" >
+        <action
+            android:id="@+id/action_game4_to_oda4"
+            app:destination="@id/oda4" />
+        <action
+            android:id="@+id/action_game4_self"
+            app:destination="@id/game4" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <argument
+            android:name="Rakip_id"
+            app:argType="string"
+            android:defaultValue="-1" />
+    </fragment>
+    <fragment
+        android:id="@+id/game5"
+        android:name="com.example.yazlab5.Game5"
+        android:label="fragment_game5"
+        tools:layout="@layout/fragment_game5" >
+        <action
+            android:id="@+id/action_game5_to_oda5"
+            app:destination="@id/oda5" />
+        <action
+            android:id="@+id/action_game5_self"
+            app:destination="@id/game5" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <argument
+            android:name="Rakip_id"
+            app:argType="string"
+            android:defaultValue="-1" />
+    </fragment>
+    <fragment
+        android:id="@+id/game6"
+        android:name="com.example.yazlab5.Game6"
+        android:label="fragment_game6"
+        tools:layout="@layout/fragment_game6" >
+        <action
+            android:id="@+id/action_game6_to_oda6"
+            app:destination="@id/oda6" />
+        <action
+            android:id="@+id/action_game6_self"
+            app:destination="@id/game6" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <argument
+            android:name="Rakip_id"
+            app:argType="string"
+            android:defaultValue="-1" />
+    </fragment>
+    <fragment
+        android:id="@+id/game7"
+        android:name="com.example.yazlab5.Game7"
+        android:label="fragment_game7"
+        tools:layout="@layout/fragment_game7" >
+        <action
+            android:id="@+id/action_game7_to_oda7"
+            app:destination="@id/oda7" />
+        <action
+            android:id="@+id/action_game7_self"
+            app:destination="@id/game7" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <argument
+            android:name="Rakip_id"
+            app:argType="string"
+            android:defaultValue="-1" />
+    </fragment>
+    <fragment
+        android:id="@+id/game8"
+        android:name="com.example.yazlab5.Game8"
+        android:label="fragment_game8"
+        tools:layout="@layout/fragment_game8" >
+        <action
+            android:id="@+id/action_game8_to_oda8"
+            app:destination="@id/oda8" />
+        <action
+            android:id="@+id/action_game8_self"
+            app:destination="@id/game8" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="-1" />
+        <argument
+            android:name="Rakip_id"
+            app:argType="string"
+            android:defaultValue="-1" />
+    </fragment>
+</navigation>

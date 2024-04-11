@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="318dp"
+        android:layout_height="33dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/LayoutOyun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/kose"
+        android:backgroundTint="#BD2525"
+        android:padding="15dp"
+        android:text="Çıkış Yap"
+        android:textColor="#F4ECEC"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/LayoutOyun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:duplicateParentState="false"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.043">
+
+            <EditText
+                android:id="@+id/Box_1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapCharacters"
+                android:maxLength="1"
+                android:nextFocusForward="@+id/Box_1_2"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapCharacters"
+                android:maxLength="1"
+                android:nextFocusForward="@+id/Box_1_3"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapCharacters"
+                android:maxLength="1"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_1_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapCharacters"
+                android:maxLength="1"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_1_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapCharacters"
+                android:maxLength="1"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_1_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapCharacters"
+                android:maxLength="1"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_1_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapCharacters"
+                android:maxLength="1"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:duplicateParentState="false"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.043">
+
+            <EditText
+                android:id="@+id/Box_2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:nextFocusForward="@+id/Box_1_2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:nextFocusForward="@+id/Box_1_3"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/Box_2_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_2_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_2_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/Box_2_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/Box_2_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:duplicateParentState="false"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.043">
+
+            <EditText
+                android:id="@+id/Box_3_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:nextFocusForward="@+id/Box_1_2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_3_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:nextFocusForward="@+id/Box_1_3"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/Box_3_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_3_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_3_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/Box_3_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/Box_3_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:duplicateParentState="false"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.043">
+
+            <EditText
+                android:id="@+id/Box_4_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:nextFocusForward="@+id/Box_1_2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_4_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:nextFocusForward="@+id/Box_1_3"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/Box_4_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_4_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_4_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/Box_4_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/Box_4_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:duplicateParentState="false"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.043">
+
+            <EditText
+                android:id="@+id/Box_5_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:nextFocusForward="@+id/Box_1_2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_5_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:nextFocusForward="@+id/Box_1_3"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/Box_5_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_5_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_5_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/Box_5_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/Box_5_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:duplicateParentState="false"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.043">
+
+            <EditText
+                android:id="@+id/Box_6_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:nextFocusForward="@+id/Box_1_2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_6_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:nextFocusForward="@+id/Box_1_3"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/Box_6_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_6_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_6_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/Box_6_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/Box_6_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:duplicateParentState="false"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="139dp"
+            tools:layout_editor_absoluteY="234dp">
+
+            <EditText
+                android:id="@+id/Box_7_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:nextFocusForward="@+id/Box_1_2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_7_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:nextFocusForward="@+id/Box_1_3"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/Box_7_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_7_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_7_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/Box_7_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/Box_7_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/LayoutKelimeOnay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:duplicateParentState="false"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.120000005">
+
+            <EditText
+                android:id="@+id/Box_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:nextFocusForward="@+id/Box_1_2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:nextFocusForward="@+id/Box_1_3"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/Box_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapSentences"
+                android:maxLength="1"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/onay_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kose"
+            android:padding="15dp"
+            android:text="ONAYLA"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.265" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="318dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_kelime_dene"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/kose"
+        android:text="ONAYLA"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutOyun" />
+
+    <Button
+        android:id="@+id/btn_rakibi_gor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/kose"
+        android:backgroundTint="#2196F3"
+        android:text="Rakibi Gör"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_kelime_dene"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/LayoutRakipGor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:duplicateParentState="false"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.120000005">
+
+        <EditText
+            android:id="@+id/Box1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="text|textCapSentences"
+            android:maxLength="1"
+            android:nextFocusForward="@+id/Box_1_2"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/Box2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="text|textCapSentences"
+            android:maxLength="1"
+            android:nextFocusForward="@+id/Box_1_3"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/Box3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="text|textCapSentences"
+            android:maxLength="1"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/Box4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="text|textCapSentences"
+            android:maxLength="1"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/Box5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="text|textCapSentences"
+            android:maxLength="1"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/Box6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="text|textCapSentences"
+            android:maxLength="1"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/Box7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="text|textCapSentences"
+            android:maxLength="1"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

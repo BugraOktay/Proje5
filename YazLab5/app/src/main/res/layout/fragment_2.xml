@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_2">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="65dp"
+        android:text="Çıkış Yap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oda8" />
+
+    <Button
+        android:id="@+id/oda1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="20dp"
+        android:text="Oda 1"
+        app:layout_constraintBottom_toTopOf="@+id/oda2"
+        app:layout_constraintEnd_toStartOf="@+id/oda5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/oda2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="10dp"
+        android:text="Oda 2"
+        app:layout_constraintBottom_toTopOf="@+id/oda3"
+        app:layout_constraintEnd_toStartOf="@+id/oda6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oda1" />
+
+    <Button
+        android:id="@+id/oda3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="20dp"
+        android:text="Oda 3"
+        app:layout_constraintBottom_toTopOf="@+id/oda4"
+        app:layout_constraintEnd_toStartOf="@+id/oda7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oda2" />
+
+    <Button
+        android:id="@+id/oda4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="268dp"
+        android:text="Oda 4"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/oda8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oda3" />
+
+    <Button
+        android:id="@+id/oda5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="20dp"
+        android:text="Oda 5"
+        app:layout_constraintBottom_toTopOf="@+id/oda6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/oda1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/oda6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="10dp"
+        android:text="Oda 6"
+        app:layout_constraintBottom_toTopOf="@+id/oda7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/oda2"
+        app:layout_constraintTop_toBottomOf="@+id/oda5" />
+
+    <Button
+        android:id="@+id/oda7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="20dp"
+        android:text="Oda 7"
+        app:layout_constraintBottom_toTopOf="@+id/oda8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/oda3"
+        app:layout_constraintTop_toBottomOf="@+id/oda6" />
+
+    <Button
+        android:id="@+id/oda8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="268dp"
+        android:text="Oda 8"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/oda4"
+        app:layout_constraintTop_toBottomOf="@+id/oda7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
